@@ -6,12 +6,10 @@
       <div class="card card-body">
 
 
-        <img
-          src="../assets/clima.png"
-          width="200" height="200"  class="mx-auto">
+        <img src="../assets/clima.png" width="200" height="200" class="mx-auto">
 
 
-<app-selector-pais-component></app-selector-pais-component>
+        <app-selector-pais-component></app-selector-pais-component>
         <form (submit)="submitLocation(cityName,countryCode)">
           <div class="form-group">
 
@@ -36,21 +34,21 @@
   <div class="row mt-2">
 
 
-  <div *ngIf="clima" class="col-md-5 mx-auto" >
-    <div class="card card-body">
-      <p><strong>Clima en {{clima.name}}</strong> </p>
+    <div *ngIf="clima" class="col-md-5 mx-auto">
+      <div class="card card-body">
+        <p><strong>Clima en {{clima.name}}</strong> </p>
 
-      <p>Temperatura Media: {{clima.main.temp}} °C</p>
-      <!-- <p>Temperatura Max:{{clima.main.temp_max}}</p>
+        <p>Temperatura Media: {{clima.main.temp}} °C</p>
+        <!-- <p>Temperatura Max:{{clima.main.temp_max}}</p>
       <p>Temperatura Min:{{clima.main.temp_min}}</p>
        <p>Sensación térmica:{{clima.main.feels_like}}</p>
      <p>Húmedad:{{clima.main.humidity}} %</p>
      <p>Presión:{{clima.main.pressure}} hPa</p> -->
 
-    </div>
-
-
-
-</div>
       </div>
+
+
+
+    </div>
+  </div>
 </div>

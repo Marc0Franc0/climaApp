@@ -10,12 +10,11 @@ import { AppRoutingModule } from './modules/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
 import { FormsModule } from '@angular/forms';
-import { SelectorPaisComponentComponent } from './components/selector-pais-component/selector-pais-component.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SelectorPaisComponentComponent,
+
 
 
   ],

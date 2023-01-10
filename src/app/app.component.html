@@ -8,8 +8,6 @@
 
         <img src="../assets/clima.png" width="200" height="200" class="mx-auto">
 
-
-        <app-selector-pais-component></app-selector-pais-component>
         <form (submit)="submitLocation(cityName,countryCode)">
           <div class="form-group">
 
@@ -23,6 +21,11 @@
 
           <button class="btn btn-primary btn-block mt-2">Obtener clima</button>
         </form>
+
+<button type="button" style="width: 40%;" class="btn btn-secondary btn-block mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Ver códigos de países
+</button>
+
 
 
       </div>
@@ -48,6 +51,23 @@
       </div>
 
 
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content " >
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Códigos de países</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body mx-auto "  >
+        <iframe class="mt-2 " src="https://datahub.io/core/country-list/r/0.html" scrolling="no" style="height: 50vh; width: 50vh;" frameborder="0"></iframe>
+      </div>
 
     </div>
   </div>

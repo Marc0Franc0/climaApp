@@ -51,4 +51,8 @@ this.climaService.obtenerClima(cityName,countryCode).subscribe(res=>{
 
     }
 
+    seleccionarPais(){
+
+    }
+
 }
